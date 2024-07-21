@@ -448,6 +448,196 @@ nav .left_bar_samples li {
     line-height: 2vw;
 }
 
+#method {
+	position: relative;
+	margin-top: 8vw;
+	width: 75%;
+	left: 50%;
+	margin-left: -37.5%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#method .title {
+    width: 100%;
+    font-size: 2.0vw;
+    margin-bottom: 3.0vw;
+}
+
+#method .method-wespe {
+	font-size: 1.05vw;
+	text-align: justify;
+}
+
+#method .dped-image {
+    float: left;
+    color: white;
+    text-align: center;
+    width: 22%;
+    height: 100%;
+    padding-left: 0.2vw;
+}
+
+#method .zrr-image {
+    float: left;
+    color: white;
+    text-align: center;
+    width: 24%;
+    height: 100%;
+    padding-left: 0.2vw;
+    margin-left: 2.9vw;
+}
+
+#method .ebb-image {
+    float: left;
+    color: white;
+    text-align: center;
+    width: 32%;
+    height: 100%;
+    padding-left: 0.2vw;
+    margin-left: 2.9vw;
+}
+
+#method .dped-info {
+    float: left;
+    text-align: justify;
+    background-color: white;
+    font-size: 1.0vw;
+    width: 71%;
+    margin-left: 1.3vw;
+}
+
+#method .zrr-info {
+    float: left;
+    text-align: justify;
+    background-color: white;
+    font-size: 1.0vw;
+    width: 62%;
+    margin-left: 3.0vw;
+}
+
+#method .ebb-info {
+    float: left;
+    text-align: justify;
+    background-color: white;
+    font-size: 1.0vw;
+    width: 54%;
+    margin-left: 3.0vw;
+}
+
+#method .camsdd-info {
+    float: center;
+    text-align: justify;
+    background-color: white;
+    font-size: 1.0vw;
+    width: 80%;
+    margin-top: 2.6vw;
+    margin-left: 10%;
+}
+
+#method-2 {
+	position: relative;
+	margin-top: 0vw;
+	width: 75%;
+	left: 50%;
+	margin-left: -37.5%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#method-2 .dped-image {
+    float: left;
+    color: white;
+    text-align: center;
+    width: 22%;
+    height: 100%;
+    padding-left: 0.2vw;
+}
+
+#method-2 .dped-info {
+    float: left;
+    text-align: justify;
+    background-color: white;
+    font-size: 1.0vw;
+    width: 53.0vw;
+    margin-right: 1.0vw;
+}
+
+#method-2 .margin-top-1vw {
+    margin-top: 1vw;
+}
+
+#method-2 .margin-top-minus1vw {
+	margin-top: -1vw;
+}
+
+#method .padding-top-05vw {
+    padding-top: 0.5vw;
+}
+
+#method-2 .btn-download {
+	padding: 0.7vw;
+	font-size: 0.9vw;
+	margin-right: 0.1vw;
+	margin-top: 1vw;
+	background-color: #f16b59;
+	cursor: pointer;
+	color: white;
+	font-family: "Raleway", "Arial", sans-serif;
+    border-color: #f16b59;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 0.3vw;
+}
+
+#method .zrr-info .zrr-btn-download {
+	padding: 0.7vw;
+	width: 100%;
+	font-size: 1.09vw;
+	margin-right: 0.1vw;
+	margin-top: 1vw;
+	background-color: #f16b59;
+	cursor: pointer;
+	color: white;
+	font-family: "Raleway", "Arial", sans-serif;
+    border-color: #f16b59;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 0.3vw;
+}
+
+#method .ebb-info .ebb-btn-download {
+	padding: 0.7vw;
+	width: 100%;
+	font-size: 1.09vw;
+	margin-right: 0.1vw;
+	margin-top: 1vw;
+	background-color: #f16b59;
+	cursor: pointer;
+	color: white;
+	font-family: "Raleway", "Arial", sans-serif;
+    border-color: #f16b59;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 0.3vw;
+}
+
+#method .camsdd-info .camsdd-btn-download {
+	padding: 0.7vw;
+	width: 100%;
+	font-size: 1.09vw;
+	margin-right: 0.1vw;
+	margin-top: 1vw;
+	background-color: #f16b59;
+	cursor: pointer;
+	color: white;
+	font-family: "Raleway", "Arial", sans-serif;
+    border-color: #f16b59;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 0.3vw;
+}
+
 #dataset {
 	position: relative;
 	margin-top: 8vw;

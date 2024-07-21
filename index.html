@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <script src="resources/js/modernizr.js"></script>
     <meta name="viewport" content="width=device-width">
-
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
 	//   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	//   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -52,6 +52,7 @@
 	<ul class="middle_bar">
 		<a href="#title"> <li> PAPER </li></a>
 		<a href="#demo"> <li> DEMO </li></a>
+		<a href="#method"> <li> METHOD </li></a>
 		<a href="#dataset"> <li> DATASET </li></a>
 		<!-- <a href="#algo"> <li> ALGO </li></a> -->
 		<a href="#code"> <li> CODE </li></a>
@@ -71,7 +72,7 @@
 	  
 <table class="authors-pynet">
 <tr>
-	<td><a target="_blank" class = "link-invisible" href="https://lizhihao6.online/about-me">Zhihao Li*</a></td>
+	<td><a target="_blank" class = "link-invisible" href="https://lizhihao6.github.io/">Zhihao Li*</a></td>
 	<td><a target="_blank" class = "link-invisible" href="https://wyf0912.github.io/">Yufei Wang*</a></td>
 	<td><a target="_blank" class = "link-invisible" href="https://scholar.google.com/citations?user=UGZXLxIAAAAJ&hl=en">Alex Kot</a></td>
 	<td><a target="_blank" class = "link-invisible" href="https://scholar.google.com/citations?user=ypkClpwAAAAJ&hl=en">Bihan Wen</a></td>
@@ -84,6 +85,8 @@
 </tr>
 </td>
 </table>
+
+<h1 class="institute"><a target="_blank" href="https://icml.cc/virtual/2024/poster/34960"> ICML 2024 Paper </a></h1>
 
 </div>
 
@@ -100,7 +103,7 @@
             <br/>
 	    	<p> <span style="font-weight:bold">Abstract:</span> Raw images offer unique advantages in many lowlevel visual tasks due to their unprocessed nature. However, this unprocessed state accentuates noise, making raw images challenging to compress effectively. Current compression methods often overlook the ubiquitous noise in raw space, leading to increased bitrates and reduced quality. In this paper, we propose a novel raw image compression scheme that selectively compresses the noise-free component of the input, while discarding its real noise using a self-supervised approach. By excluding noise from the bitstream, both the coding efficiency and reconstruction quality are significantly enhanced. We curate a full-day dataset of raw images with calibrated noise parameters and reference images to evaluate the performance of models under a wide range of input signalnoise ratios. Experimental results demonstrate that our method surpasses existing compression techniques, achieving a more advantageous ratedistortion balance with improvements ranging from +2 to +10dB and yielding a bit saving of 2 to 50 times.</p>
 	        <!-- <p style="margin-top: 0.2vw;"> -->
-	        	<!-- <a target="_blank" href="https://arxiv.org/pdf/2204.08970.pdf"> arXiv: 2204.08970, 2022 </a> -->
+	        	<!-- <a target="_blank" href="https://arxiv.org/pdf/2204.08970.pdf"> arXiv: 2204. </a> -->
 	        	<!-- <a target="_blank" href="https://arxiv.org/pdf/1910.06663.pdf"><button class="follow-up"> Deep Learning on Smartphones Paper >> </button></a> -->
 	        	<!--<a target="_blank" href="http://phancer.com/"><button class="follow-up" style="padding-left: 2.9vw; padding-right: 2.9vw; background-color: #f16b59;"> online demo </button></a>-->
 	        <!-- </p> -->
@@ -113,234 +116,43 @@
 	<h1 class="title"> <text class="highlight-color-blue">&#60;</text> Rendering Results <text class="highlight-color-blue">&#62;</text> </h1>
 
 	<h1 class="title" style="font-size: 1.4vw;">
-		Canon 550D:&nbsp;&nbsp; <text class="highlight-color">Rendered with CBUnet</text>&nbsp; vs. &nbsp;<text class="highlight-color-blue">RAW Photos</text>
+		Sony a7S II:&nbsp;&nbsp; <text class="highlight-color">Ours</text>&nbsp; vs. &nbsp;<text class="highlight-color-blue">RAW </text>
 	</h1>
 	
-		<!-- Canon 550D Images -->
-
 	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/1.jpg" alt="Original Image">
+		<img src="resources/assets/img/SID/10030_00_0.1s.ARW_lq.png" alt="Original Image">
 		<span class="cd-image-label" data-type="original">RAW</span>
 		
 		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/1.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-    <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/2.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">RAW</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/2.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-    <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/3.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">RAW</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/3.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-    <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/4.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">RAW</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/4.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-    <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/5.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">RAW</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/5.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-    <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/6.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">RAW</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/6.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-    <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/7.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">RAW</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/7.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-    <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/8.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">RAW</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/8.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-    <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/9.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">RAW</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/9.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
+			<img src="resources/assets/img/SID/10030_00_0.1s.ARW_result.png" alt="Modified Image">
+			<span class="cd-image-label" data-type="modified">Ours</span>
 		</div>
 		
 		<span class="cd-handle cd-first"></span>
 	</figure>
 
 	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/raw/10.jpg" alt="Original Image">
+		<img src="resources/assets/img/SID/10030_00_0.1s.ARW_lq.png" alt="Original Image">
 		<span class="cd-image-label" data-type="original">RAW</span>
 		
 		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/10.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
+			<img src="resources/assets/img/SID/10030_00_0.1s.ARW_result.png" alt="Modified Image">
+			<span class="cd-image-label" data-type="modified">Ours</span>
 		</div>
 		
 		<span class="cd-handle cd-first"></span>
 	</figure>
 
-	<!-- Huawei P20 Images -->
-	
-	<p>
-	</br>
-	</p>
-	
 	<h1 class="title" style="font-size: 1.4vw;">
-		Canon 550D:&nbsp;&nbsp; <text class="highlight-color">Rendered with CBUnet</text>&nbsp; vs. &nbsp;<text class="highlight-color-blue">Official ISP Photos from <a href="https://nightimaging.org/">Challenge</a></text>
+		Redmi Note12 Turbo:&nbsp;&nbsp; <text class="highlight-color">Ours</text>&nbsp; vs. &nbsp;<text class="highlight-color-blue">RAW </text>
 	</h1>
-
-
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/1.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/1.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/2.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/2.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/3.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/3.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/4.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/4.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
 	
-	
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/5.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
+    <figure class="cd-image-container">
+		<img src="resources/assets/img/OV64B/noise_true_875_30000000_2024_01_01_19_36_30_942.dng_lq.png" alt="Original Image">
+		<span class="cd-image-label" data-type="original">RAW</span>
 		
 		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/5.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/6.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/6.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-	
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/7.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/7.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-	
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/8.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/8.jpg" alt="Modified Image">
+			<img src="resources/assets/img/OV64B/noise_true_875_30000000_2024_01_01_19_36_30_942.dng_result.png" alt="Modified Image">
 			<span class="cd-image-label" data-type="modified">CBUnet</span>
 		</div>
 		
@@ -348,93 +160,11 @@
 	</figure>
 
     <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/9.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/9.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-    <figure class="cd-image-container">
-		<img src="resources/assets/img/canon_550d/baseline/10.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Official ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/canon_550d/cbunet/10.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-
-    <!-- BlackBerry KeyOne Images -->
-
-	<p>
-	</br>
-	</p>
-
-	<h1 class="title">
-		iPhone 8 Plus:&nbsp;&nbsp; <text class="highlight-color">Rendered with CBUnet</text>&nbsp; vs. &nbsp;<text class="highlight-color-blue">RAW Photos</text>
-	</h1>
-
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/iphone_8plus/raw/1.jpg" alt="Original Image">
+		<img src="resources/assets/img/OV64B/noise_true_875_30000000_2024_01_01_19_36_30_942.dng_lq.png" alt="Original Image">
 		<span class="cd-image-label" data-type="original">RAW</span>
 		
 		<div class="cd-resize-img">
-			<img src="resources/assets/img/iphone_8plus/cbunet/1.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/iphone_8plus/raw/2.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">RAW</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/iphone_8plus/cbunet/2.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-	
-    	
-    <!-- BlackBerry KeyOne Images -->
-
-	<p>
-	</br>
-	</p>
-
-	<h1 class="title">
-		iPhone 8 Plus:&nbsp;&nbsp; <text class="highlight-color">Rendered with CBUnet</text>&nbsp; vs. &nbsp;<text class="highlight-color-blue">iPhone ISP Photos</text>
-	</h1>
-
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/iphone_8plus/camera_isp/1.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">iPhone ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/iphone_8plus/cbunet/1.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">CBUnet</span>
-		</div>
-		
-		<span class="cd-handle cd-first"></span>
-	</figure>
-
-	<figure class="cd-image-container">
-		<img src="resources/assets/img/iphone_8plus/camera_isp/2.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">iPhone ISP</span>
-		
-		<div class="cd-resize-img">
-			<img src="resources/assets/img/iphone_8plus/cbunet/2.jpg" alt="Modified Image">
+			<img src="resources/assets/img/OV64B/noise_true_875_30000000_2024_01_01_19_36_30_942.dng_result.png" alt="Modified Image">
 			<span class="cd-image-label" data-type="modified">CBUnet</span>
 		</div>
 		
@@ -442,6 +172,34 @@
 	</figure>
 
 </div>
+
+<div id="method">
+
+	<h1 class="title"> <text class="italic"> <text class="highlight-color">&lt;</text> Method </text>&nbsp;<text class="highlight-color">&gt;</text> </h1>
+
+	<p><img src="resources/assets/img/cleans/framework.png" width="80%; margin-top: 1.2vw;"></p>
+
+	<div>
+		<div class="camsdd-info">
+            The proposed framework for self-supervised raw image denoising and compression without reliance on paired clean images. Distinct from typical learning-based compressors, our approach first subtracts fixed pattern noise \( n_{fp} \) from the noise input \( \tilde{x} \) in the compressor encoder. Then, it compresses the predicted clean signal \( \hat{x} \), constrained by \( \tilde{x} - F_n(\tilde{x}; \Omega) \), using a compressor with an integrated hyperprior module. To regularize the predicted noise \( \hat{n} = F_n(\tilde{x}; \Omega) \), we use a bijective mapping based on the physical-based noise model to map the complicated noise distribution to a latent space where the distribution is known. Besides, a covariance loss is used to enhance the spatial independence of the disentangled noise \( \hat{n} \).
+		</div>
+	</div>
+</div>
+<!-- <div id="demo">
+
+	<h1 class="title"> <text class="highlight-color-blue">&#60;</text> Method <text class="highlight-color-blue">&#62;</text> </h1>
+
+	<figure style="width: 80%; margin: 0 auto; text-align: left;">
+		<img src="resources/assets/img/OV64B/noise_true_875_30000000_2024_01_01_19_36_30_942.dng_lq.png" alt="Original Image" style="width: 100%; height: auto;">
+		<figcaption>The proposed framework for self-supervised raw image denoising and compression without reliance on paired clean images.
+			Distinct from typical learning-based compressors, our approach first subtracts fixed pattern noise nf p from the noise input  ̃x in the
+			compressor encoder. Then, it compresses the predicted clean signal ˆx, constrained by  ̃x − Fn( ̃x; Ω), using a compressor with an integrated
+			hyperprior module. To regularize the predicted noise ˆn = Fn( ̃x; Ω), we use a bijective mapping based on the physical-based noise model
+			to map the complicated noise distribution to a latent space where the distribution is known. Besides, a covariance loss is used to enhance
+			the spatial independence of the disentangled noise ˆn.</figcaption>
+	</figure>
+
+</div> -->
 
 <div id="dataset">
 
@@ -461,7 +219,7 @@
 	    	<!-- <br/> -->
 	    	<br/>
 			<p>
-			To address this limitation, we develop a full-day raw image compression (FDRIC) dataset that covers a wide range of SNR, ensuring comprehensive training and evaluation. We collected our dataset using the Redmi Note12 Turbo smartphone, with an OV64B sensor of a resolution of 4624×3472. Our dataset includes 549 noisy images for training and 32 noise-clean image pairs for evaluation. To collect paired pairs for testing, we first captured short-exposure images with auto-adjusted ISO and exposure time, followed by 25 long-exposure shots at ISO-100. We ensured the same product of ISO and exposure time for both noisy and clean images to achieve consistent exposure levels. Our dataset contains indoor and outdoor scenes with illumination ranging from 0.1 to more than 100,000 lux.
+			To address this limitation, we develop a full-day raw image compression (FDRIC) dataset that covers a wide range of SNR, ensuring comprehensive training and evaluation. We collected our dataset using the Redmi Note12 Turbo smartphone, with an OV64B sensor of a resolution of 4624×3472. Our dataset includes 549 noisy images for training and 32 noise-clean image pairs for evaluation. Our dataset contains indoor and outdoor scenes with illumination ranging from 0.1 to more than 100,000 lux.
 			</p>
 	    	<!-- <br/> -->
 	    	<br/>
@@ -470,7 +228,7 @@
 			<!-- </p> -->
 			<!-- <br/> -->
 			<!-- <br/> -->
-			<a target="_blank" href="https://drive.google.com/file/d/10aiSgLPS18PYq_FnhPmFiNh0ikTNK0ul/view?usp=sharing"><button class="zrr-btn-download">Full Day Raw Image Compression Dataset (11.97 GB)</button></a>
+			<a target="_blank" href=""><button class="zrr-btn-download">Full Day Raw Image Compression Dataset (11.97 GB)</button></a>
 		</div>
 	</div>
 	
